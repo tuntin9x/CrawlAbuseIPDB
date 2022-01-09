@@ -33,9 +33,9 @@ def main():
         res = processDataOnePage(numberPage)
         full_List_Ip.extend(res)
         numberPage = numberPage + 1
-        antiblock = random.randint(0, 11)
-        time.sleep(antiblock)
-        print("Sleep: " + str(antiblock))
+        antiblock = random.randint(0, 9)
+        time.sleep(antiblock/10)
+        print("Sleep: " + str(antiblock/10))
     numberPage = numberPage - 1
     print("Done getting all : " + str(numberPage) + " pages.")
     print(full_List_Ip)
