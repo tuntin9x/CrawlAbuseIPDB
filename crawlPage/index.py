@@ -31,7 +31,8 @@ def main():
     while res != "null":
         print("Getting data Page: " + str(numberPage))
         res = processDataOnePage(numberPage)
-        full_List_Ip.extend(res)
+        if res != "null":
+            full_List_Ip.extend(res)
         numberPage = numberPage + 1
         antiblock = random.randint(0, 9)
         time.sleep(antiblock/10)
